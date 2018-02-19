@@ -6,16 +6,62 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-blue.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
   </head>
+  
+  <p></p>
+  <hr>
+  <header style="color:#9c8d88; font-family:Avenir; margin: auto; width: 50%; padding: 10px; text-align: center; font-size:30px; "> My Website Prompt.</header>   
+  <p style="margin:auto; width: 50%; padding: 10px; text-align: center; font-size:11px;"> Abdulla Al-Ansari | Est.2016 | Project 3 Template </p>
+  <hr>
+  
+    
+  <div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header" style="background-color:#F8F8FF;" >
+  <div class="mdl-layout__header-row">  
+    <span class="mdl-layout__title" style = " font-family:Avenir; margin: left; width: 10%; padding: 10px; font-size:16px;"> Website Demo </span>
+      <nav class="mdl-navigation">
 
-  <body class ="w3-container w3-sand">
+        <a class="mdl-navigation__link" style = " font-family:Avenir; margin: left; width: 50%; padding-right: 131px; padding-left: 131px; font-size:16px;" href="/static_pages/home" >Home</a>
+        <a class="mdl-navigation__link" style = " font-family:Avenir; margin: left; width: 50%; padding-right: 131px; padding-left: 131px; font-size:16px;" href="/user_twos" >Users</a>
+        <a class="mdl-navigation__link" style = " font-family:Avenir; margin: left; width: 50%; padding-right: 131px; padding-left: 131px; font-size:16px;" href="/static_pages/help">Help</a>
+        <a class="mdl-navigation__link" style = " font-family:Avenir; margin: left; width: 50%; padding-right: 131px; padding-left: 131px; font-size:16px;"  href="/static_pages/about">About</a>
+        
+      </nav> 
+  </div>
+  </header>
+
+
+    
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout__title">Website Demo</span>
+      <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/static_pages/home">Home</a>
+      <a class="mdl-navigation__link" href="/user_twos" >Users</a>
+      <a class="mdl-navigation__link" href="/static_pages/help">Help</a>
+      <a class="mdl-navigation__link" href="/static_pages/about" >About</a>
+      </nav>
+  </div>
+    
+    
+<main class="mdl-layout__content">
+  <div class="mdl-grid">  
+  
+
+  <%= yield %>
+</main>
+  </div>
+<body class ="w3-container w3-white">
     <ul>
-      <a href="/static_pages/home" class="w3-btn w3-pale-red">Home</a>
-       <a href="/" class="w3-btn w3-pale-green">Mighty Quotes</a>
-       <a href="/static_pages/help" class="w3-btn w3-pale-red">Help</a>
-       <a href="/static_pages/about" class="w3-btn w3-pale-green">About</a>
+
+      
     </ul>
-    <%= yield %>
-  </body>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+</body>
 </html>
 
